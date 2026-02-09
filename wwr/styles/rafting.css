@@ -70,7 +70,24 @@ h1 {
     color: #fff;
 }
 
+.hero article {
+    position: absolute;
+    top: 300px;
+    width: 96%;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
 .hero article img {
     float: right;
     width: 125px;
+}
+
+h2 {
+    position: relative;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
