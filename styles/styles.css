@@ -17,6 +17,7 @@ footer {
 }
 
 main {
+    max-width: none;
     grid-column: 2/3;
     margin: 10px;
 }
@@ -78,7 +79,7 @@ main img {
 }
 
 aside img {
-    width: 300px;
+    width: 200px;
     height: auto;
     border: 1px solid rgb(43, 81, 112);
     padding: 2px;
