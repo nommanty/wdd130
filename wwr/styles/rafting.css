@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #0da23a;
+    --primary-color: #96e1ac;
 
-    --secondary-color: #5b5501;
+    --secondary-color: #8e850e;
 
-    --accent1-color: #2e4325;
+    --accent1-color: #47d055;
 
-    --accent2-color: #6cc981;
+    --accent2-color: #034813;
 
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -36,6 +36,26 @@ header {
     background-color: var(--secondary-color);
 }
 
+/*Modifies Header*/
+header img {
+    width: 120px;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Till here*/
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -50,10 +70,6 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 /*Style the Hero Div with Overlays*/
 
 .hero {
@@ -66,7 +82,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -97,4 +113,75 @@ h2 {
     opacity: 0.7;
     background-color: var(--secondary-color);
     color: #fff;
+}
+
+/*Modifies History*/
+section h2 {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/*Till here*/
+
+/*Modifies Adventure Awaits*/
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    text-align: left;
+}
+
+figure {
+    text-align: center;
+}
+
+/*Till here*/
+
+/*Modifies Footer*/
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
 }
