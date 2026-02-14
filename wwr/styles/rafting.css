@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #96e1ac;
+    --primary-color: #0fd34a;
 
-    --secondary-color: #8e850e;
+    --secondary-color: #ebead9;
 
-    --accent1-color: #47d055;
+    --accent1-color: #01710d;
 
     --accent2-color: #034813;
 
@@ -98,7 +98,7 @@ article {
     top: 300px;
     width: 96%;
     background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    color: #fff;
 }
 
 .hero article img {
