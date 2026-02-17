@@ -185,3 +185,256 @@ footer {
     width: 40px;
     height: auto;
 }
+
+/* Contact page modifiers*/
+
+.contact-info,
+.employees,
+.contact-form {
+    margin: 2rem auto;
+    max-width: 840px;
+}
+
+/* Contact info: centrado, líneas más pegadas y color más oscuro */
+.contact-information {
+    text-align: center;
+    /* centra el contenido */
+    color: var(--accent2-color);
+    /* tono más oscuro (ya lo tienes definido) */
+    margin: 1rem auto;
+    /* menos margen vertical */
+    padding: 0;
+    /* quita padding extra */
+    line-height: 1.1;
+    /* líneas más pegadas (ajusta 1.0–1.2) */
+}
+
+/* Quita el margen/padding que tu regla global le pone a los <p> */
+.contact-information p {
+    margin: 2px 0;
+    /* muy poco espacio entre líneas */
+    padding: 0;
+}
+
+.employees {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.employees img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 840px;
+    margin: 2rem auto;
+}
+
+.contact-layout iframe {
+    flex: 1;
+    height: 320px;
+}
+
+.contact-layout form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-layout input,
+.contact-layout textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #2a7f62;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e5e49;
+}
+
+.newsletter {
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.cta {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #2a7f62;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: #1e5e49;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-content div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.grid-content img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip-grid article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.trip-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* Radio group layout: label izquierda + opciones en columna */
+.purpose-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.purpose-title {
+    min-width: 140px;
+    /* ajusta el ancho del texto "Message Purpose" */
+    font-weight: bold;
+}
+
+.purpose-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.purpose-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Message box, subscribe option and submit button*/
+
+/* Solo afecta al formulario dentro de .contact-layout */
+.contact-layout form {
+    color: #000;
+    /* texto negro (como la imagen 1) */
+}
+
+/* Labels más “normales” y sin espacios extra */
+.contact-layout form label {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Textarea como en la imagen 1: ancho completo y cómodo */
+.contact-layout form textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Checkbox y texto en la misma línea, checkbox a la izquierda */
+.newsletter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.newsletter-row input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Botón estilo “gris” y no a todo el ancho */
+.contact-layout form button {
+    background-color: #e6e6e6;
+    color: #000;
+    border: 1px solid #999;
+    border-radius: 3px;
+    width: 70%;
+    align-self: center;
+    padding: 8px 10px;
+}
+
+.contact-layout form button:hover {
+    background-color: #dcdcdc;
+}
+
+/*Email y Name*/
