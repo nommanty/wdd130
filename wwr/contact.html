@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us - White Water Rafting</title>
-    <meta name="description" content="White Water Rafting contact page.">
+    <meta name="description"
+      content="White Water Rafting contact page. In this page you can findm telephone numbers, adresses, email. Also in this page you'll find a form so the rafting company can contact you later">
     <meta name="author" content="Andres Quispe">
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -41,31 +42,34 @@
 
             <form>
                 <div>
-                    <label>Name:</label>
-                    <input type="text" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
                 <div>
-                    <label>Email:</label>
-                    <input type="text" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="purpose-group">
                     <span class="purpose-title">Message Purpose</span>
 
                     <div class="purpose-options">
-                        <label>
-                            <input type="radio" name="purpose" value="general-inquiry" required>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose"
+                              value="general-inquiry" required>
                             General Inquiry
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation-question">
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation-question">
                             Reservation Question
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="website-suggestion">
+                        <label for="purpose-website">
+                            <input type="radio" id="purpose-website" name="purpose"
+                              value="website-suggestion">
                             Website Suggestion
                         </label>
                     </div>
@@ -73,16 +77,19 @@
 
                 <div>
                     <label for="message">Message</label>
-                    <textarea id="message" required placeholder="Type here"></textarea>
+                    <textarea id="message" name="message" required
+                      placeholder="Type here"></textarea>
                 </div>
+
                 <div class="newsletter-row">
-                    <input type="checkbox" id="monthly-subscription">
+                    <input type="checkbox" id="monthly-subscription" name="monthly_subscription">
                     <label for="monthly-subscription">Please Subscribe me to the monthly
                         newsletter</label>
                 </div>
 
                 <button type="submit">Get in Touch!</button>
             </form>
+
 
         </section>
 
@@ -106,15 +113,22 @@
         </section>
 
     </main>
-
     <footer>
-        <p>© 2026 White Water Rafting</p>
+        <p>© 2026 🌴 White Water Rafting 🌴 Andres Quispe 🌴</p>
+        <nav class="socialmedia">
 
-        <div class="socialmedia">
-            <img src="images/facebook-mini-logo.png" alt="Facebook">
-            <img src="images/instagram-mini-logo.png" alt="Instagram">
-            <img src="images/linkedin-mini-logo.png" alt="LinkedIn">
-        </div>
+            <a href="https://facebook.com">
+                <img src="images/facebook-mini-logo.png" alt="Facebook Icon" width="100">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-mini-logo.png" alt="LinkedIn Icon" width="100">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram-mini-logo.png" alt="Instagram Icon" width="100">
+            </a>
+        </nav>
     </footer>
 
 </body>
