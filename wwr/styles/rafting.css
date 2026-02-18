@@ -250,13 +250,6 @@ iframe {
     height: 320px;
 }
 
-.contact-layout form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 .contact-layout input,
 .contact-layout textarea {
     padding: 8px;
@@ -396,8 +389,11 @@ th {
 
 /* Solo afecta al formulario dentro de .contact-layout */
 .contact-layout form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     color: #000;
-    /* texto negro (como la imagen 1) */
 }
 
 /* Labels más “normales” y sin espacios extra */
