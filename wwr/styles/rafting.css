@@ -209,6 +209,10 @@ footer {
     /* líneas más pegadas (ajusta 1.0–1.2) */
 }
 
+.contact-information h1 {
+    color: var(--accent2-color);
+}
+
 /* Quita el margen/padding que tu regla global le pone a los <p> */
 .contact-information p {
     margin: 2px 0;
